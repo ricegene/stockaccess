@@ -1,6 +1,6 @@
 # stockaccess
 
-put finance data to Access, then Foxtrader and WInstcock can use 
+
 新手，没什么基础，第一次用python写，目的是解决自己工作中的问题，上市公司有很多财务数据，但并不能被股票分析软件所调用，尤其是历史数据。想要在股票分析软件上清析的查看历史财务数据是很因难，为此，写了这些代码，将公司历年来的财务数据导入到zccess数据库中，然后，股票分析软件就可以轻松调用了。
 
 将上市公司分年度的财务数据，导入access数据库中，并被飞狐交易师，金字塔等股票软件调用
@@ -8,6 +8,7 @@ put finance data to Access, then Foxtrader and WInstcock can use
  清晰展示各上市公司的历年主要财务情况，并进行各种统计
  
 参数1 ，rootdir,是数据源的保存地，其下有各类分年度的财务数据，为TXT格式
+txt 文件名是  1990   1991   1992   1993等，里面有两列，1列是股票代码，2列是对应的财务数据
 
 参数2，dbegin,dend是源数据的开始年份和终止年份，注意0标起点，dend=2016,是指处理到2015年
 
